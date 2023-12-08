@@ -1,25 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</head>
 
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- ХЕДЕР -->
     <header class="container-fluid">
         <div class="container">
-            <div class="row">
-                <div class="col-1">
-                    <h3>Начало</h3>
+            <div class="header row">
+                <div class="header-icon col-2">
+                    <h3>Placeholder</h3>
                 </div>
-                <div class="col-11">
+                <div class="header-menu col-10">
                     <ul>
                         <li>
                             <a href="#">Главная</a>
@@ -39,7 +45,89 @@
         </div>
     </header>
 
+    <!-- Основная часть сайта-->
+    <div class="container">
+        <div class="content row">
+            <!-- часть с новостями-->
+            <div class="content-post col-8">
+                <h4> Последние публикации</h4>
+                <div class="post row">
+                    <div class="post-image col-2">
+                        <img class="mx-auto d-block" src="images/alpine_itogi_rr.jpg">
+                    </div>
+                    <div class="post-text col-10">
+                        <h5>08/12</h5>
+                        <p>
+                            В Alpine уверенно опередили аутсайдеров, но значительно уступили остальным, закончив
+                            состоящий из интриг и скандалов сезон на шестом месте.
+                        </p>
+                    </div>
+                </div>
+                <div class="post row">
+                    <div class="post-image col-2">
+                        <img class="mx-auto d-block" src="images/williams_itogi_rr.jpg">
+                    </div>
+                    <div class="post-text col-10">
+                        <h5>08/12</h5>
+                        <p>
+
+                            Первый сезон под руководством перешедшего из Mercedes Джеймса Ваулза в Williams закончили с
+                            лучшим результатом за последние пять лет.
+                        </p>
+                    </div>
+                </div>
+                <div class="post row">
+                    <div class="post-image col-2 i">
+                        <img class="mx-auto d-block" src="images/alpine_itogi.jpg">
+                    </div>
+                    <div class="post-text col-10">
+                        <h5>08/12</h5>
+                        <p>
+                            В Alpine уверенно опередили аутсайдеров, но значительно уступили остальным, закончив
+                            состоящий из интриг и скандалов сезон на шестом месте.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- часть с важными новостями-->
+            <div class="content-important col-4">
+                <h4>Важные новости</h4>
+                <div class="important row">
+                    <p>Нерешенные вопросы, оставшиеся от ненужной саги FIA / Wolff</p>
+                </div>
+                <div class="important row">
+                    <p>Как новый дизайн кокпита Формулы-1 поможет избежать проблем с жарой в Катаре</p>
+                </div>
+                <div class="important row">
+                    <p>FIA формализует запрет на аэротестирование Формулы-1 в 2026 году</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-fluid container-fluid">
+        <div class="footer-container container">
+            <div class="footer-content row">
+                <div class="footer-other-series col-4">
+                    <h4>Другие серии</h4>
+                    <p>GT3</p>
+                    <p>WEC</p> 
+                </div>
+                <div class="footer-contacts col-4">
+                    <h4>Связаться с нами</h4>
+                    <p>GT3</p>
+                    <p>WEC</p> 
+                </div>
+                <div class="footer-policy col-4">
+                    <h4>Правила использования сайта</h4>
+                    <p>Политика конфиденциальности</p>
+                    <p>Настройки cookie</p> 
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-  </body>
+</body>
+
 </html>

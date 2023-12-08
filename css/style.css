@@ -6,9 +6,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-color: aliceblue;
-}
+
 
 a {
     text-decoration: none;
@@ -20,6 +18,17 @@ li {
     display: inline;
 }
 
+div h3 {
+    margin-top: 5px;
+}
+
+div ul {
+    margin-top: 14px;
+}
+
+ul li {
+    padding-right: 10px;
+}
 /*
     Настройки хедера
 */
@@ -34,14 +43,58 @@ header div {
     height: inherit;
 }
 
-div h3 {
-    margin-top: 5px;
+/*
+    настройки части с контентом
+*/
+.content-post  h4 {
+    margin: 10px 0;
 }
 
-div ul {
-    margin-top: 14px;
+.content-post .post {
+    margin: 10px 0;
+    max-height: 100px;
 }
 
-ul li {
-    padding-right: 10px;
+.post .post-image {
+    background-color: #9af3f3;
+    border-radius: 10px;
+    padding-top: 10px;
+
+}
+
+.post .post-text {
+    background-color: #9af3f3;
+    border-radius: 10px;
+}
+
+/* сайдбар с важными новостями */
+.content-important  h4 {
+    margin: 10px 0;
+}
+
+.content-important .important {
+    background-color: bisque;
+    margin: 10px 0;
+}
+
+/* 
+  Футер
+*/
+
+footer {
+    margin-top: 100px;
+    background-color: aquamarine;
+}
+
+.footer-content .footer-other-series {
+    height: 200px;
+    background-color:antiquewhite;
+}
+
+.footer-content .footer-contacts {
+    background-color: brown;
+}
+
+.footer-policy {
+    background-color: chocolate;
 }
