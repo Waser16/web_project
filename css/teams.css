@@ -44,49 +44,58 @@ header div {
 }
 
 /*
-    настройки части с контентом
+    Основная часть  
 */
-.content-post {
-    border-right: 1px solid gainsboro;
-}
-
-
-.content-post  h4 {
+.content .team-container h4 {
     margin: 10px 0;
 }
 
-.content-post .post {
+.championship-image img {
+    border: 1px solid black;
+}
+
+
+.team-container .team {
+    margin: 50px 0;
+    border-top: 1px solid black;
+}
+
+.team-container .team p {
+    padding: 0 0;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.team .driver {
+    padding: 0 0;
+    text-align: center;
+}
+
+.team .driver p{
+    font-weight: normal;
+    padding: 0 0;
+    text-align: center;
+    
+}
+
+
+
+
+
+/* часть с важными новостями */
+.content .content-important h4 {
     margin: 10px 0;
 }
 
-.post .post-image {
-    background-color: #9af3f3;
-    border-radius: 10px;
-    padding-top: 10px;
-
-}
-
-.post .post-text {
-    background-color: #9af3f3;
-    border-radius: 10px;
-}
-
-/* сайдбар с важными новостями */
-.content-important  h4 {
-    margin: 10px 0;
-}
-
-.content-important .important {
-    background-color: bisque;
+.content .content-schedule div {
     margin: 10px 0;
 }
 
 
 
-/* 
-  Футер
+/*
+ Футер
 */
-
 footer {
     margin-top: 100px;
     background-color: aquamarine;
@@ -95,12 +104,13 @@ footer {
 .footer-content .footer-other-series {
     height: 200px;
     background-color:antiquewhite;
+    padding: 10px;
 }
 
 .footer-content .footer-contacts {
     background-color: brown;
 }
 
-.footer-policy {
+.footer-content .footer-policy {
     background-color: chocolate;
 }
