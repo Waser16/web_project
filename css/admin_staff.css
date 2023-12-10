@@ -23,6 +23,10 @@ div ul {
 ul li {
     padding-right: 10px;
 }
+
+p {
+    padding: 0;
+}
 /*
     Настройки хедера
 */
@@ -40,9 +44,6 @@ header div {
 /*
     настройки части с контентом
 */
-.main-fluid {
-    margin: 100px 0;
-}
 .content .content-post {
     border-right: 1px solid gainsboro;
     padding: none;
@@ -55,7 +56,7 @@ header div {
 
 .content-post .post {
     margin: 10px 0;
-    background-color: #000;
+    background-color: #9af3f3;
 }
 
 .post .post-image {
@@ -82,9 +83,21 @@ header div {
     padding: 10px 0;
 }
 
-.important a {
-    padding: 0  ;
+.important p {
+    margin: 0px;
+    padding: 0px;
 }
+
+
+.important p a {
+    margin-top: 20px;
+    font: bold;
+}
+
+
+
+
+
 
 /* 
   Футер
@@ -92,19 +105,21 @@ header div {
 
 footer {
     margin-top: 100px;
+    margin-bottom: 0;
     background-color: aquamarine;
+    position: absolute;
+
 }
 
 .footer-content .footer-other-series {
     height: 200px;
     background-color:antiquewhite;
-    padding: 10px;
 }
 
 .footer-content .footer-contacts {
     background-color: brown;
 }
 
-.footer-content .footer-policy {
+.footer-policy {
     background-color: chocolate;
 }

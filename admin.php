@@ -36,7 +36,7 @@
         <div class="content row">
             <!-- часть с новостями-->
             <div class="content-post col-8">
-                <h4>Список ваших публикаций</h4>
+                <h4>Панель для администрации</h4>
                 <?php
                     require('connection.php');
 
@@ -93,7 +93,8 @@
                                                 WHERE author = '{$_SESSION['user']['id']}'
                                                 ";
                     $author_profile_q = mysqli_query($db, $author_profile_q_text);
-                    while ($mas = mysqli_fetch_array($author_profile_q)) {
+                    $mas = mysqli_fetch_array($author_profile_q);
+                    if ($_SESSION['user']['position'] != 'админ') {
                         printf(
                             "<div class='important row'>
                                 <p>
@@ -104,7 +105,20 @@
                                 </p>
                             </div>    
                             ", $mas['last_name'], $mas['first_name'], $mas['cnt'], $mas['latest_post']);
-                        }
+                    }
+                    else {
+                        printf(
+                            "<div class='important row'>
+                                <p>
+                                    %s %s <br>
+                                    Статей: %s <br>
+                                    Дата последней статьи: %s <br>
+                                    <a href='admin_create.php'><b>Добавить статью</b></a><br>
+                                    <a href='admin_staff.php'><b>Аккаунты сотрудников</b></a><br
+                                </p>
+                            </div>    
+                            ", $mas['last_name'], $mas['first_name'], $mas['cnt'], $mas['latest_post']);
+                    }
                 ?>
             </div>
         </div>
