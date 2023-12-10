@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/autherization.css">
+    <link rel="stylesheet" href="css/registration.css">
     <title>Чемпионат</title>
 </head>
 
@@ -28,16 +28,16 @@
                 <div class="header-menu col-10">
                     <ul>
                         <li>
-                            <a href="index.html">Главная</a>
+                            <a href="index.php">Главная</a>
                         </li>
                         <li>
-                            <a href="championship.html">Календарь</a>
+                            <a href="championship.php">Календарь</a>
                         </li>
                         <li>
-                            <a href="teams.html">Команды</a>
+                            <a href="teams.php">Команды</a>
                         </li>
                         <li>
-                            <a href="registration.html">Войти</a>
+                            <a href="registration.php">Войти</a>
                         </li>
                     </ul>
                 </div>
@@ -53,14 +53,19 @@
                 </div>
                 <div class="registration-form-containter col-4">
                     <form class="registration-form" method="POST">
+                        <label>Фамилия</label><br>
+                        <input id="register-input" type="text" placeholder="Иванов"><br>
+                        <label>Имя</label><br>
+                        <input id="register-input" type="text" placeholder="Иван"><br>
                         <label>Логин</label><br>
+                        <input id="register-input" type="text" placeholder="Никнейм"><br>
+                        <label>Электронная почта</label><br>
                         <input id="register-input" type="text" placeholder="example@mail.ru"><br>
                         <label>Пароль</label><br>
-                        <input id="register-input" type="text" placeholder="Ваш пароль"><br>
-                        <input id="submit-input" type="submit" value="Войти"> 
-                        <p>
-                            Нет аккаунта? <a href="registration.html">Регистрация</a>
-                        </p>
+                        <input id="register-input" type="text" placeholder="Введите пароль"><br>
+                        <label>Подтверждение пароля</label><br>
+                        <input id="register-input" type="text" placeholder="Подтвердите пароль"><br>
+                        <input id="submit-input" type="submit" value="Зарегистрироваться"> 
                     </form>
                 </div>
                 <div class="right-space col-4">

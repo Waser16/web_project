@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/championship.css">
+    <link rel="stylesheet" href="css/championship.css" type="text/css">
     <title>Чемпионат</title>
 </head>
 
@@ -28,16 +28,16 @@
                 <div class="header-menu col-10">
                     <ul>
                         <li>
-                            <a href="index.html">Главная</a>
+                            <a href="index.php">Главная</a>
                         </li>
                         <li>
-                            <a href="championship.html">Календарь</a>
+                            <a href="championship.php">Календарь</a>
                         </li>
                         <li>
-                            <a href="teams.html">Команды</a>
+                            <a href="teams.php">Команды</a>
                         </li>
                         <li>
-                            <a href="autherization.html">Войти</a>
+                            <a href="autherization.php">Войти</a>
                         </li>
                     </ul>
                 </div>

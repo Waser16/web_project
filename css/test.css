@@ -71,6 +71,14 @@ header div {
     border-radius: 10px;
 }
 
+form a input {
+    border: none;
+    padding: 0 0;
+    background-color: none;
+    background: none;
+}
+
+
 /* сайдбар с важными новостями */
 .content-important  h4 {
     margin: 10px 0;
@@ -81,6 +89,10 @@ header div {
     margin: 10px 0;
 }
 
+#submit-title {
+    background: none;
+    border: none;
+} 
 
 
 /* 

@@ -1,12 +1,6 @@
-
-/* 
-    Глобальные настроки
-*/
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 
 a {
     text-decoration: none;
@@ -44,36 +38,35 @@ header div {
 }
 
 /*
-    Основная часть  
+    настройки части с контентом
 */
-.content .content-schedule h4 {
+.content-post {
+    border-right: 1px solid gainsboro;
+}
+
+
+.content-post  h4 {
     margin: 10px 0;
 }
 
-img {
-    border: 1px solid black;
-}
-
-table {
-    border-top: 2px solid black;
+.content-post .post {
     margin: 10px 0;
 }
 
-table th {
-    font-weight: bold;
-    padding: 5px;
-    background: #efefef;
-    border: 1px solid #dddddd;
-    border-top: #000;
-    text-align: center;
+.post .post-image {
+    background-color: #9af3f3;
+    border-radius: 10px;
+    padding: 10px 0;
 }
-.schedule-table td {
-    border: 1px solid #dddddd;
-    padding: 5px;
-    text-align: center;
+
+.post .post-text {
+    background-color: #9af3f3;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
+/* сайдбар с важными новостями */
 .content-important  h4 {
     margin: 10px 0;
 }
@@ -89,9 +82,14 @@ table th {
 }
 
 
-/*
- Футер
+
+
+
+
+/* 
+  Футер
 */
+
 footer {
     margin-top: 100px;
     background-color: aquamarine;
@@ -100,13 +98,12 @@ footer {
 .footer-content .footer-other-series {
     height: 200px;
     background-color:antiquewhite;
-    padding: 10px;
 }
 
 .footer-content .footer-contacts {
     background-color: brown;
 }
 
-.footer-content .footer-policy {
+.footer-policy {
     background-color: chocolate;
 }
