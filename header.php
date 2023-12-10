@@ -23,7 +23,7 @@
                             }
                             else {
                                 echo "<li>
-                                        <a href='#'>Админ панель</a>
+                                        <a href='admin.php'>Админ панель</a>
                                     </li>";
 
                                 echo "<li>

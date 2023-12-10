@@ -1,0 +1,124 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+div h3 {
+    margin-top: 5px;
+}
+
+div ul {
+    margin-top: 14px;
+}
+
+ul li {
+    padding-right: 10px;
+}
+
+p {
+    padding: 0;
+}
+/*
+    Настройки хедера
+*/
+
+header {
+    height: 50px;
+    background-color:aquamarine;
+    position: relative;
+}
+
+header div {
+    height: inherit;
+}
+
+/*
+    настройки части с контентом
+*/
+.content .content-post {
+    border-right: 1px solid gainsboro;
+    padding: none;
+}
+
+
+.content-post  h4 {
+    margin: 10px 0;
+}
+
+.content-post .post {
+    margin: 10px 0;
+    background-color: #000;
+}
+
+.post .post-image {
+    background-color: #9af3f3;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.post .post-text {
+    background-color: #9af3f3;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* сайдбар с важными новостями */
+.content-important  h4 {
+    margin: 10px 0;
+}
+
+.content-important .important{
+    background-color: bisque;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.important p {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.important p a {
+    margin-top: 20px;
+    font: bold;
+}
+
+
+
+
+
+
+/* 
+  Футер
+*/
+
+footer {
+    margin-bottom: 0;
+    background-color: aquamarine;
+    position: absolute;
+
+}
+
+.footer-content .footer-other-series {
+    height: 200px;
+    background-color:antiquewhite;
+}
+
+.footer-content .footer-contacts {
+    background-color: brown;
+}
+
+.footer-policy {
+    background-color: chocolate;
+}
