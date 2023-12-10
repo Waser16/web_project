@@ -42,7 +42,7 @@
                         <label>Логин</label><br>
                         <input id="register-input" name='email' type="text" placeholder="example@mail.ru"><br>
                         <label>Пароль</label><br>
-                        <input id="register-input" name='password' type="text" placeholder="Ваш пароль"><br>
+                        <input id="register-input" name='password' type="password" placeholder="Ваш пароль"><br>
                         <input id="submit-input" type="submit" value="Войти"> 
                         <p>
                             Нет аккаунта? <a href="registration.php">Регистрация</a>

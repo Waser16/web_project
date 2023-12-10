@@ -50,13 +50,13 @@ header div {
     padding-left: 0px;
 }
 
-.field-name .input-part .post-input-radio {
-    margin-right: 10px;
-}
-
 .input-part .post-title-input {
     width: 50%;
     height: 100px;
+}
+
+.field-name .input-part .post-input-radio {
+    margin-right: 10px;
 }
 
 .input-part .post-text-input {
@@ -64,14 +64,14 @@ header div {
     height: 400px;
 }
 
+
+
 .input-part .post-submit {
     width: 100%;
     background-color: azure;
     border-radius: 5px;
     border: 1px solid gray;
 }
-
-
 
 
 

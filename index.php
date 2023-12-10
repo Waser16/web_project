@@ -59,11 +59,11 @@
                                         %s
                                     </a>
                                 </h5>
-                                <p>%s | %s %s</p>
+                                <p>%s %s | %s</p>
                             </div>
                         </div>
-                    ", $mas['image_path'], $mas['id'], $mas['title'], $mas['post_date'], $mas['first_name'],
-                        $mas['last_name']);
+                    ", $mas['image_path'], $mas['id'], $mas['title'], $mas['first_name'],
+                        $mas['last_name'], $mas['post_date']);
                     }
 
                 ?>

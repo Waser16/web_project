@@ -72,10 +72,10 @@
                                         %s
                                     </a>
                                 </h5>
-                                <p>%s | <a href='#'>Изменить</a> | <a href='admin_delete.php?post_id=%s'>Удалить</a></p>
+                                <p>%s | <a href='admin_update.php?post_id=%s'>Изменить</a> | <a href='admin_delete.php?post_id=%s'>Удалить</a></p>
                             </div>
                         </div>
-                    ", $mas['image_path'], $mas['id'], $mas['title'], $mas['post_date'], $mas['id']);
+                    ", $mas['image_path'], $mas['id'], $mas['title'], $mas['post_date'], $mas['id'], $mas['id']);
                     }
 
                 ?>

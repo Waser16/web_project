@@ -92,8 +92,8 @@ header div {
   Футер
 */
 
-footer {
-    margin-bottom: 0;
+.footer-fluid {
+    margin-top: 100px;
     background-color: aquamarine;
     position: absolute;
 
