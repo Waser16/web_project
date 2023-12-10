@@ -28,6 +28,11 @@ $insert_post_q_text = "INSERT INTO `posts`(`title`, `post_date`, `image_path`, `
 $insert_post_q = mysqli_query($db, $insert_post_q_text);
 
 if ($insert_post_q) {
+    $image = imagecreatefromjpeg($path);
+    $preview_image = imagescale($image, 120, 80);
+    $big_image = imagescale($image, 855);
+    imagejpeg($preview_image, $short_path . "_rr.jpg");
+    imagejpeg($big_image, $short_path . "_big.jpg");
     header("Location: admin.php");
 }
 else {
