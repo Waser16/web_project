@@ -40,8 +40,9 @@ header div {
 /*
     настройки части с контентом
 */
-.content-post {
+.content .content-post {
     border-right: 1px solid gainsboro;
+    padding: none;
 }
 
 
@@ -51,6 +52,7 @@ header div {
 
 .content-post .post {
     margin: 10px 0;
+    background-color: #000;
 }
 
 .post .post-image {
@@ -91,8 +93,10 @@ header div {
 */
 
 footer {
-    margin-top: 100px;
+    margin-bottom: 0;
     background-color: aquamarine;
+    position: absolute;
+
 }
 
 .footer-content .footer-other-series {

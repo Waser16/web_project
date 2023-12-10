@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -9,7 +13,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/registration.css" type="text/css">
     <title>Чемпионат</title>
 </head>
 
@@ -19,31 +23,9 @@
         crossorigin="anonymous"></script>
 
     <!-- ХЕДЕР -->
-    <header class="container-fluid">
-        <div class="container">
-            <div class="header row">
-                <div class="header-icon col-2">
-                    <h3>Placeholder</h3>
-                </div>
-                <div class="header-menu col-10">
-                    <ul>
-                        <li>
-                            <a href="index.php">Главная</a>
-                        </li>
-                        <li>
-                            <a href="championship.php">Календарь</a>
-                        </li>
-                        <li>
-                            <a href="teams.php">Команды</a>
-                        </li>
-                        <li>
-                            <a href="registration.php">Войти</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php
+        require('header.php')
+    ?>
 
     <!-- Основная часть сайта-->
     <div class="container-fluid">
@@ -52,20 +34,26 @@
                 <div class="left-space col-4">
                 </div>
                 <div class="registration-form-containter col-4">
-                    <form class="registration-form" method="POST">
+                    <form class="registration-form" method="POST" action="registration_check.php">
                         <label>Фамилия</label><br>
-                        <input id="register-input" type="text" placeholder="Иванов"><br>
+                        <input id="register-input" name='last-name' type="text  " placeholder="Иванов"><br>
                         <label>Имя</label><br>
-                        <input id="register-input" type="text" placeholder="Иван"><br>
+                        <input id="register-input" name='first-name' type="text" placeholder="Иван"><br>
                         <label>Логин</label><br>
-                        <input id="register-input" type="text" placeholder="Никнейм"><br>
+                        <input id="register-input" name='login' type="text" placeholder="Никнейм"><br>
                         <label>Электронная почта</label><br>
-                        <input id="register-input" type="text" placeholder="example@mail.ru"><br>
+                        <input id="register-input" name='email' type="text" placeholder="example@mail.ru"><br>
                         <label>Пароль</label><br>
-                        <input id="register-input" type="text" placeholder="Введите пароль"><br>
+                        <input id="register-input" name='password' type="password" placeholder="Введите пароль"><br>
                         <label>Подтверждение пароля</label><br>
-                        <input id="register-input" type="text" placeholder="Подтвердите пароль"><br>
+                        <input id="register-input" name='password-check' type="password" placeholder="Подтвердите пароль"><br>
                         <input id="submit-input" type="submit" value="Зарегистрироваться"> 
+                        <?php 
+                            if ($_SESSION['error_msg']) {
+                                echo "<p id='error-msg-p'>" . $_SESSION['error_msg'] . "</p>";
+                            }
+                            unset($_SESSION["error_msg"]);
+                        ?>
                     </form>
                 </div>
                 <div class="right-space col-4">

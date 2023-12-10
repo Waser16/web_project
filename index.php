@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    #unset($_SESSION['user']);
+    require('connection.php');
+    #echo print_r($_SESSION['user']);
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -19,31 +27,9 @@
         crossorigin="anonymous"></script>
 
     <!-- ХЕДЕР -->
-    <header class="container-fluid">
-        <div class="container">
-            <div class="header row">
-                <div class="header-icon col-2">
-                    <h3>Placeholder</h3>
-                </div>
-                <div class="header-menu col-10">
-                    <ul>
-                        <li>
-                            <a href="index.php">Главная</a>
-                        </li>
-                        <li>
-                            <a href="championship.php">Календарь</a>
-                        </li>
-                        <li>
-                            <a href="teams.php">Команды</a>
-                        </li>
-                        <li>
-                            <a href="autherization.php">Войти</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php
+        require('header.php')
+    ?>
 
     <!-- Основная часть сайта-->
     <div class="container">

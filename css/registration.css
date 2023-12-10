@@ -50,9 +50,6 @@ header div {
 .content .row {
     margin: 70px 0;
 }
-.registration-form p {
-    padding: 0 0 0 0;
-}
 
 label {
     margin-top: 10px;
@@ -70,6 +67,11 @@ label {
     width: 75%;
     margin: 20px 0;
     border: none;
+}
+
+#error-msg-p {
+    padding: 10px 0;
+    border: 1px solid black;
 }
 
 p a {

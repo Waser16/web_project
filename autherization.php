@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    require('connection.php');
+    if ($_SESSION['user']) {
+        header("Location: index.php");
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -19,31 +27,9 @@
         crossorigin="anonymous"></script>
 
     <!-- ХЕДЕР -->
-    <header class="container-fluid">
-        <div class="container">
-            <div class="header row">
-                <div class="header-icon col-2">
-                    <h3>Placeholder</h3>
-                </div>
-                <div class="header-menu col-10">
-                    <ul>
-                        <li>
-                            <a href="index.php">Главная</a>
-                        </li>
-                        <li>
-                            <a href="championship.php">Календарь</a>
-                        </li>
-                        <li>
-                            <a href="teams.php">Команды</a>
-                        </li>
-                        <li>
-                            <a href="registration.php">Войти</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php
+        require('header.php')
+    ?>
 
     <!-- Основная часть сайта-->
     <div class="container-fluid">
@@ -52,15 +38,18 @@
                 <div class="left-space col-4">
                 </div>
                 <div class="registration-form-containter col-4">
-                    <form class="registration-form" method="POST">
+                    <form class="registration-form" method="POST" action="autherization_check.php">
                         <label>Логин</label><br>
-                        <input id="register-input" type="text" placeholder="example@mail.ru"><br>
+                        <input id="register-input" name='email' type="text" placeholder="example@mail.ru"><br>
                         <label>Пароль</label><br>
-                        <input id="register-input" type="text" placeholder="Ваш пароль"><br>
+                        <input id="register-input" name='password' type="text" placeholder="Ваш пароль"><br>
                         <input id="submit-input" type="submit" value="Войти"> 
                         <p>
                             Нет аккаунта? <a href="registration.php">Регистрация</a>
                         </p>
+                        <?php
+                            echo $_SESSION['user'];
+                        ?>
                     </form>
                 </div>
                 <div class="right-space col-4">
