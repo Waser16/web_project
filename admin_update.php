@@ -91,7 +91,7 @@
                             <div class="input-part col-10">
                                 <input type="hidden" name="author_id" value="<?php echo $_SESSION['user']['id'];?>">
                                 <input type="hidden" name="post_id" value='<?php echo $post_id;?>'>
-                                <input class="post-submit" type="submit" value="Добавить статью">
+                                <input class="post-submit" type="submit" value="Изменить статью">
                             </div>
                         </div>
                     </form>
