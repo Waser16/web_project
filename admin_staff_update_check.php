@@ -37,3 +37,5 @@ if ($update_staff_q) {
 } else {
     echo "Что-то пошло не так";
 }
+
+?>

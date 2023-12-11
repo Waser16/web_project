@@ -23,31 +23,24 @@ div ul {
 ul li {
     padding-right: 10px;
 }
-/*
-    Настройки хедера
-*/
 
-header {
-    height: 50px;
-    background-color:aquamarine;
-    position: relative;
-}
 
-header div {
-    height: inherit;
-}
 
 /*
     настройки части с контентом
 */
 .main-fluid {
-    margin: 100px 0;
-}
-.content .content-post {
-    border-right: 1px solid gainsboro;
-    padding: none;
+    background-color: #FEEFE9;
 }
 
+.main-container {
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.content .content-post {
+    padding: none;
+}
 
 .content-post  h4 {
     margin: 10px 0;
@@ -55,19 +48,25 @@ header div {
 
 .content-post .post {
     margin: 10px 0;
-    background-color: #000;
+    border: 1px solid bisque;
+    border-radius: 20px;
 }
 
 .post .post-image {
-    background-color: #9af3f3;
-    border-radius: 10px;
     padding: 10px 0;
 }
 
 .post .post-text {
-    background-color: #9af3f3;
-    border-radius: 10px;
     padding: 10px;
+}
+
+.post .post-text h5 a {
+    margin: 10px 0;
+}
+
+.post .post-text p {
+    padding: 0;
+    margin: 10px 0;
 }
 
 
@@ -77,34 +76,12 @@ header div {
 }
 
 .content-important .important{
-    background-color: bisque;
+    border-top: 1px solid red;
+    border-radius: 10px;
     margin: 10px 0;
     padding: 10px 0;
 }
 
 .important a {
-    padding: 0  ;
-}
-
-/* 
-  Футер
-*/
-
-footer {
-    margin-top: 100px;
-    background-color: aquamarine;
-}
-
-.footer-content .footer-other-series {
-    height: 200px;
-    background-color:antiquewhite;
-    padding: 10px;
-}
-
-.footer-content .footer-contacts {
-    background-color: brown;
-}
-
-.footer-content .footer-policy {
-    background-color: chocolate;
+    padding: 0 10px;
 }

@@ -29,23 +29,21 @@ div ul {
 ul li {
     padding-right: 10px;
 }
-/*
-    Настройки хедера
-*/
 
-header {
-    height: 50px;
-    background-color:aquamarine;
-    position: relative;
-}
-
-header div {
-    height: inherit;
-}
 
 /*
     Основная часть  
 */
+
+.main-fluid {
+    background-color: #FEEFE9;
+}
+
+.main-container {
+    background-color: white;
+    padding-bottom: 50px;
+}
+
 .content .content-schedule h4 {
     margin: 10px 0;
 }
@@ -74,39 +72,19 @@ table th {
 }
 
 
+/* сайдбар с важными новостями */
 .content-important  h4 {
     margin: 10px 0;
 }
 
 .content-important .important{
-    background-color: bisque;
+    border-top: 1px solid red;
+    border-radius: 10px;
     margin: 10px 0;
     padding: 10px 0;
 }
 
 .important a {
-    padding: 0  ;
+    padding: 0 10px;
 }
 
-
-/*
- Футер
-*/
-footer {
-    margin-top: 100px;
-    background-color: aquamarine;
-}
-
-.footer-content .footer-other-series {
-    height: 200px;
-    background-color:antiquewhite;
-    padding: 10px;
-}
-
-.footer-content .footer-contacts {
-    background-color: brown;
-}
-
-.footer-content .footer-policy {
-    background-color: chocolate;
-}

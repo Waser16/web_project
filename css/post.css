@@ -29,34 +29,23 @@ div ul {
 ul li {
     padding-right: 10px;
 }
-/*
-    Настройки хедера
-*/
 
-header {
-    height: 50px;
-    background-color:aquamarine;
-    position: relative;
-}
-
-header div {
-    height: inherit;
-}
 
 /*
     настройки части с контентом
 */
-.content-post {
-    border-right: 1px solid gainsboro;
+.main-container {
+    margin-bottom: 50px;
 }
-
 
 .content-post  h4 {
     margin: 10px 0;
+    margin-bottom: 5px;
 }
 
 .content-post  p {
-    margin: 10px 0;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .content-post .post-image {
@@ -78,31 +67,15 @@ header div {
     margin: 10px 0;
 }
 
-.content-important .important {
-    background-color: bisque;
+.content-important .important{
+    border-top: 1px solid red;
+    border-radius: 10px;
     margin: 10px 0;
+    padding: 10px 0;
+}
+
+.important a {
+    padding: 0 10px;
 }
 
 
-
-/* 
-  Футер
-*/
-
-footer {
-    margin-top: 100px;
-    background-color: aquamarine;
-}
-
-.footer-content .footer-other-series {
-    height: 200px;
-    background-color:antiquewhite;
-}
-
-.footer-content .footer-contacts {
-    background-color: brown;
-}
-
-.footer-policy {
-    background-color: chocolate;
-}

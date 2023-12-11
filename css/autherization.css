@@ -30,25 +30,24 @@ div ul {
 ul li {
     padding-right: 10px;
 }
-/*
-    Настройки хедера
-*/
 
-header {
-    height: 50px;
-    background-color:aquamarine;
-    position: relative;
-}
-
-header div {
-    height: inherit;
-}
 
 /*
     настройки части с контентом
 */
-.content .row {
-    margin: 70px 0;
+.main-fluid {
+    background-color: #FEEFE9;
+}
+
+.main-container {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 314px;
+}
+
+
+.main-container .row {
+
 }
 .registration-form p {
     padding: 0 0 0 0;
@@ -76,23 +75,3 @@ p a {
     color: cadetblue;
 }
 
-/* 
-  Футер
-*/
-
-footer {
-    background-color: aquamarine;
-}
-
-.footer-content .footer-other-series {
-    height: 200px;
-    background-color:antiquewhite;
-}
-
-.footer-content .footer-contacts {
-    background-color: brown;
-}
-
-.footer-policy {
-    background-color: chocolate;
-}

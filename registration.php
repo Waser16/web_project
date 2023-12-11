@@ -13,23 +13,21 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
     <link rel="stylesheet" href="css/registration.css" type="text/css">
-    <title>Чемпионат</title>
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <title>Регистрация</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-
     <!-- ХЕДЕР -->
     <?php
         require('header.php')
     ?>
 
     <!-- Основная часть сайта-->
-    <div class="container-fluid">
-        <div class="content container">
+    <div class="main-fluid container-fluid">
+        <div class="main-container container">
             <div class="row"> 
                 <div class="left-space col-4">
                 </div>
@@ -62,28 +60,9 @@
         </div>
     </div>
 
-    <footer class="footer-fluid container-fluid">
-        <div class="footer-container container">
-            <div class="footer-content row">
-                <div class="footer-other-series col-4">
-                    <h4>Другие серии</h4>
-                    <p>GT3</p>
-                    <p>WEC</p>
-                </div>
-                <div class="footer-contacts col-4">
-                    <h4>Связаться с нами</h4>
-                    <p>galart82003@gmail.com</p>
-                    <p>+79279691214</p>
-                </div>
-                <div class="footer-policy col-4">
-                    <h4>Правила использования сайта</h4>
-                    <p>Политика конфиденциальности</p>
-                    <p>Настройки cookie</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <?php
+        require('footer.php');
+    ?>
 
 </body>
 

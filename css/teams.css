@@ -29,23 +29,20 @@ div ul {
 ul li {
     padding-right: 10px;
 }
-/*
-    Настройки хедера
-*/
 
-header {
-    height: 50px;
-    background-color:aquamarine;
-    position: relative;
-}
-
-header div {
-    height: inherit;
-}
 
 /*
     Основная часть  
 */
+
+.main-fluid {
+    background-color: #FEEFE9;
+}
+
+.main-container {
+    background-color: white;
+}
+
 .content .team-container h4 {
     margin: 10px 0;
 }
@@ -83,34 +80,19 @@ header div {
 
 
 /* часть с важными новостями */
-.content .content-important h4 {
+/* сайдбар с важными новостями */
+.content-important  h4 {
     margin: 10px 0;
 }
 
-.content .content-schedule div {
+.content-important .important{
+    border-top: 1px solid red;
+    border-radius: 10px;
     margin: 10px 0;
+    padding: 10px 0;
 }
 
-
-
-/*
- Футер
-*/
-footer {
-    margin-top: 100px;
-    background-color: aquamarine;
+.important a {
+    padding: 0 10px;
 }
 
-.footer-content .footer-other-series {
-    height: 200px;
-    background-color:antiquewhite;
-    padding: 10px;
-}
-
-.footer-content .footer-contacts {
-    background-color: brown;
-}
-
-.footer-content .footer-policy {
-    background-color: chocolate;
-}
