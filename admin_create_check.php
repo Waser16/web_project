@@ -17,13 +17,14 @@ $post_title = $_POST["post-title"];
 $post_text = $_POST["post-text"];
 $important = $_POST['important'];
 $author_id = $_POST['author_id'];
+$date = date("Y-m-d");
 
 $path = "images/" . $_FILES['pic-path']['name'];
 move_uploaded_file($_FILES['pic-path']['tmp_name'], $path);
 $short_path = substr($path, 0, strlen($path) - 4);
 
 $insert_post_q_text = "INSERT INTO `posts`(`title`, `post_date`, `image_path`, `post_text`, `author`, `important`)
-     VALUES ('$post_title','2023-12-09','$short_path','$post_text','$author_id','$important')";
+     VALUES ('$post_title','$date','$short_path','$post_text','$author_id','$important')";
 
 $insert_post_q = mysqli_query($db, $insert_post_q_text);
 
