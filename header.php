@@ -2,7 +2,7 @@
         <div class="header-container container">
             <div class="header row">
                 <div class="header-icon col-2">
-                    <h3>Автоспорт</h3>
+                    <h3><a href="index.php">Автоспорт</a></h3>
                 </div>
                 <div class="header-menu col-10">
                     <ul>
