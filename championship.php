@@ -93,7 +93,7 @@
                             <td><img alt="Гран При Азербайджана" height="16"
                                     src="//cdn.f1ne.ws/userfiles/AZB(2).gif" title="Гран При Азербайджана"
                                     width="26"></td>
-                            <td>Азербайджан</a> *</td>
+                            <td>Азербайджан</a></td>
                             <td>Баку</a></td>
                             <td>6003 м</td>
                             <td>51</td>
@@ -153,7 +153,7 @@
                             <td>02/07</td>
                             <td><img alt="Гран При Австрии" border="0" height="16"
                                     src="//cdn.f1ne.ws/userfiles/ATR.gif" title="Гран При Австрии" width="26"></td>
-                            <td>Австрия</a> *</td>
+                            <td>Австрия</a></td>
                             <td>Шпильберг</a></td>
                             <td>4318 м</td>
                             <td>71</td>
@@ -191,7 +191,7 @@
                             <td>30/07</td>
                             <td><img alt="Гран При Бельгии" border="0" height="16"
                                     src="//cdn.f1ne.ws/userfiles/BEL.gif" title="Гран При Бельгии" width="26"></td>
-                            <td>Бельгия</a> *</td>
+                            <td>Бельгия</a></td>
                             <td>Спа</a></td>
                             <td>7004 м</td>
                             <td>44</td>
@@ -215,7 +215,7 @@
                             <td>03/09</td>
                             <td><img alt="Гран При Италии" border="0" height="16"
                                     src="//cdn.f1ne.ws/userfiles/ITA.gif" title="Гран При Италии" width="26"></td>
-                            <td>Италия</a> **</td>
+                            <td>Италия</a></td>
                             <td>Монца</a></td>
                             <td>5793 м</td>
                             <td>51</td>
@@ -251,7 +251,7 @@
                             <td>&nbsp;08/10</td>
                             <td><img alt="Флаг Катара" height="16"
                                     src="//cdn.f1ne.ws/userfiles/qatar.png" title="Флаг Катара" width="26"></td>
-                            <td>Катар</a> *</td>
+                            <td>Катар</a></td>
                             <td>Лосаил</a></td>
                             <td>5419 м</td>
                             <td>57</td>
@@ -288,7 +288,7 @@
                             <td>&nbsp;05/11</td>
                             <td><img alt="Гран При Бразилии" border="0" height="16"
                                     src="//cdn.f1ne.ws/userfiles/BRA.gif" title="Гран При Бразилии" width="26"></td>
-                            <td><a>Сан-Паулу</a> *</td>
+                            <td><a>Сан-Паулу</a></td>
                             <td><a">Сан-Паулу</a></td>
                             <td>4309 м</td>
                             <td>71</td>
