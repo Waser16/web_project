@@ -20,14 +20,14 @@ $first_name = $_POST['first-name'];
 $login = $_POST['login'];
 $password = $_POST['password'];
 $email = $_POST['email'];
-$positiom = $_POST['position'];
+$position = $_POST['position'];
 
 
 $update_staff_q_text = "UPDATE staff 
                         SET last_name ='$last_name',
                         first_name='$first_name', login ='$login',
                         password = '$password', email ='$email',
-                        position ='$password' 
+                        position ='$position' 
                         WHERE id='$id'";
 
 $update_staff_q = mysqli_query($db, $update_staff_q_text);

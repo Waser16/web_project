@@ -66,7 +66,7 @@
                             <p>Картинка:</p>
                         </div>
                         <div class='input-part col-10'>
-                            <input type="file" name="pic-path" value='<?php echo $image_path;?>'>
+                            <input type="file" name="pic-path">
                         </div>
                     </div>
                     <div class='field-name row'>
@@ -75,7 +75,7 @@
                         </div>
                         <div class='input-part col-10'>
                             <input type="radio" class='post-input-radio' name='important' <?php if ($important == '1') echo "checked";?> value='1'>Да   
-                            <input type="radio" class="post-input-radio" name='important' <?php if ($important == '0') echo "checked";?>value='0'>Нет
+                            <input type="radio" class="post-input-radio" name='important' <?php if ($important == '0') echo "checked";?> value='0'>Нет
                         </div>
                     </div>
                     <div class='field-name row'>
