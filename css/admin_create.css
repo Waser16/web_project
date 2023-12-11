@@ -24,22 +24,17 @@ ul li {
     padding-right: 10px;
 }
 /*
-    Настройки хедера
-*/
-
-header {
-    height: 50px;
-    background-color:aquamarine;
-    position: relative;
-}
-
-header div {
-    height: inherit;
-}
-
-/*
     настройки части с контентом
 */
+
+.main-fluid {
+    background-color: #FEEFE9;
+}
+
+.main-container {
+    background-color: white;
+    padding-bottom: 100px;
+}
 
 .content .create h4 {
     margin: 10px 0;
@@ -75,46 +70,24 @@ header div {
 
 
 
-/* сайдбар с важными новостями */
+/* профиль пользователя */
 .content-important  h4 {
     margin: 10px 0;
 }
 
 .content-important .important{
-    background-color: bisque;
     margin: 10px 0;
     padding: 10px 0;
+    border-top: 5px solid #331E1C;
 }
+
+.important p {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .important p a {
-    padding-top: 50px;
-}
-
-
-
-
-
-
-/* 
-  Футер
-*/
-
-footer {
-    margin-bottom: 0;
-    background-color: aquamarine;
-    position: absolute;
-
-}
-
-.footer-content .footer-other-series {
-    height: 200px;
-    background-color:antiquewhite;
-}
-
-.footer-content .footer-contacts {
-    background-color: brown;
-}
-
-.footer-policy {
-    background-color: chocolate;
+    margin-top: 20px;
+    font: bold;
 }

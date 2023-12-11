@@ -27,28 +27,23 @@ ul li {
 p {
     padding: 0;
 }
-/*
-    Настройки хедера
-*/
-
-header {
-    height: 50px;
-    background-color:aquamarine;
-    position: relative;
-}
-
-header div {
-    height: inherit;
-}
 
 /*
     настройки части с контентом
 */
-.content .content-post {
-    border-right: 1px solid gainsboro;
-    padding: none;
+
+.main-fluid {
+    background-color: #FEEFE9;
 }
 
+.main-container {
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.content .content-post {
+    padding: none;
+}
 
 .content-post  h4 {
     margin: 10px 0;
@@ -56,31 +51,37 @@ header div {
 
 .content-post .post {
     margin: 10px 0;
-    background-color: #000;
+    border: 1px solid bisque;
+    border-radius: 20px;
 }
 
 .post .post-image {
-    background-color: #9af3f3;
-    border-radius: 10px;
     padding: 10px 0;
 }
 
 .post .post-text {
-    background-color: #9af3f3;
-    border-radius: 10px;
     padding: 10px;
 }
 
+.post .post-text h5 a {
+    margin: 10px 0;
+}
 
-/* сайдбар с важными новостями */
+.post .post-text p {
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+/* профиль автора*/
 .content-important  h4 {
     margin: 10px 0;
 }
 
 .content-important .important{
-    background-color: bisque;
     margin: 10px 0;
     padding: 10px 0;
+    border-top: 5px solid #331E1C;
 }
 
 .important p {
@@ -99,27 +100,4 @@ header div {
 
 
 
-/* 
-  Футер
-*/
 
-footer {
-    margin-top: 100px;
-    margin-bottom: 0;
-    background-color: aquamarine;
-    position: absolute;
-
-}
-
-.footer-content .footer-other-series {
-    height: 200px;
-    background-color:antiquewhite;
-}
-
-.footer-content .footer-contacts {
-    background-color: brown;
-}
-
-.footer-policy {
-    background-color: chocolate;
-}
